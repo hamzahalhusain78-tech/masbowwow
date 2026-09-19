@@ -1,0 +1,7 @@
+*{
+    margin: 0px;
+}
+
+h1, p{
+    background: linear-gradient(to left, blue, rgb(10, 178, 245));
+}
