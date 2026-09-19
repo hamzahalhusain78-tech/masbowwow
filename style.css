@@ -4,4 +4,9 @@
 
 h1, p{
     background: linear-gradient(to left, blue, rgb(10, 178, 245));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    box-shadow: 0 3px 10px rgb(49, 48, 48);
 }
