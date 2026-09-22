@@ -2,11 +2,303 @@
     margin: 0px;
 }
 
- .title-web {
-    background: linear-gradient(to left, blue, rgb(10, 178, 245));
+ .title-web, web-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
-    box-shadow: 0 3px 10px rgb(49, 48, 48);
+    padding: 20px 50px;
+   
 }
+
+nav{
+    background: linear-gradient(to left, rgb(250, 42, 188), rgb(235, 204, 228));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0 3px 10px rgb(54, 52, 52);
+    border-radius: 20px;
+    margin-top: 10px;
+    
+}
+
+
+
+
+
+ 
+body{
+    background: linear-gradient(to bottom, rgb(255, 5, 159), rgb(226, 148, 174), rgb(233, 138, 153));
+    margin: 50px;
+    padding:20px;
+}
+
+
+/* Container Navigasi */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    gap: 10px;                /* Jarak antar menu */
+    padding: 20px 20px;
+    border-radius: 15px;
+    border: 1px;
+    margin-top: 15px;
+}
+
+/* Gaya Teks Menu Utama */
+.navbar a {
+    position: relative;
+    color: #da2149;           /* Warna teks putih terang agar terbaca di background biru */
+    text-decoration: none;    /* Menghilangkan garis bawah bawaan browser */
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
+    padding: 5px 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Garis Bawah Animasi (Elemen Semu / Pseudo-element) */
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0%;                /* Garis sembunyi secara default */
+    height: 3px;              /* Ketebalan garis animasi */
+    bottom: 0;
+    left: 0;
+    background-color: #9b057a; /* Warna garis cyan/terang yang kontras */
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out; /* Durasi animasi melebarnya garis */
+}
+
+/* Efek Saat Kursor diarahkan (Hover) */
+.navbar a:hover {
+    color: #b91977;           /* Teks berubah warna menjadi cyan terang */
+    transform: translateY(-2px); /* Teks sedikit terangkat ke atas */
+}
+
+.navbar a:hover::after {
+    width: 100%;              /* Garis memanjang penuh dari kiri ke kanan */
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: rgba(255, 255, 255, 0.1); /* Efek Kaca / Glassmorphism */
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  margin-top: 15px;
+  flex-wrap: wrap; /* Agar responsif di HP */
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%; /* Membuat foto jadi lingkaran */
+  padding: 5px;
+  background: linear-gradient(135deg, #ff007f, #7928ca); /* Bingkai gradasi menarik */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05) rotate(3deg); /* Efek membesar saat kursor diarahkan */
+  box-shadow: 0 15px 30px rgba(255, 0, 127, 0.4);
+}
+
+.www {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.my-text {
+  font-size: 1.5rem;
+  margin: 20px;
+  color: #0b0d0e; /* Warna cyan menyala */
+ 
+}
+
+
+.salam {
+  flex: 1;
+  min-width: 250px;
+}
+
+
+
+.asiyap {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111110; /* Warna kuning emas terang */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  direction: rtl; /* Memastikan penulisan teks Arab dari kanan ke kiri */
+  text-align: right;
+}
+
+
+.rowr {
+  font-size: 1rem;
+  color: #0e0d0d;
+}
+
+ul {
+  list-style: none; /* Menghilangkan titik default list */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  background: #da1cda;
+  color: #1a1a2e;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(248, 25, 129, 0.4);
+}
+
+.bawah {
+    margin-top: 15px;
+}
+
+.about {
+    background: linear-gradient(to left, rgb(250, 42, 188), rgb(235, 204, 228));
+    box-shadow: 0 5px 15px rgba(65, 64, 64, 0.4);
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+h2{
+  background: rgba(248, 141, 216, 0.952);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  padding: 20px;
+font-size: 1.5rem;
+  margin: 20px;
+  color: #0b0d0e; /* Warna cyan menyala */
+}
+
+h2:hover {
+     background: #da1cda;
+  color: #1a1a2e;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(248, 25, 129, 0.4);
+}
+
+
+
+/* Kontainer Utama */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Desain Kartu (Card) untuk setiap bagian */
+.card {
+    background: #ffffff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(106, 27, 154, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #7b1fa2;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(106, 27, 154, 0.15);
+}
+
+/* Styling Judul */
+.card h2 {
+    font-size: 1.3rem;
+    color: #4a148c;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f3e5f5;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Styling Paragraf Profil */
+.card p {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Styling Tabel Data Diri */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+table th {
+    background-color: #7b1fa2;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f2fc;
+}
+
+table tr:hover {
+    background-color: #f1dff7;
+}
+
+table td a {
+    color: #7b1fa2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Styling Daftar Hobi */
+.hobi {
+    padding-left: 20px;
+}
+
+.hobi li {
+    padding: 6px 0;
+    color: #444;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+

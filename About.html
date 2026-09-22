@@ -3,87 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <title>About Me - Struktur Dasar HTML</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>About Me</h1>
-
     <nav>
-      <a href="index.html">Home</a> | <a href="About.html">About</a> |
-      <a href="Contact.html">Contact</a> | <a href="Project.html">Project</a> |
-      <a href="Myfamily.html">My Family</a>
+      <h1 class="www">About Me</h1>
     </nav>
-    <hr />
-    <h2>Profil Singkat</h2>
-    <p>
-      Nama saya <strong>Sakti Wibowo</strong>. Saya adalah mahasiswa PSTI yang
-      memiliki ketertarikan pada web development dan teknologi informasi.
-    </p>
-    <p>
-      Saya mulai belajar membuat website dari HTML dasar.<br />
-      Website target saya adalah dapat membuat website yang bermanfaat dan mudah
-      digunakan.
-    </p>
 
-    <hr />
+    <nav class="navbar">
+      <a href="index.html" class="1">Home</a> |
+      <a href="About.html" class="4">About</a> |
+      <a href="Contact.html" class="2">Contact</a> |
+      <a href="Project.html" class="5">Project</a> |
+      <a href="Myfamily.html" class="3">My Family</a>
+    </nav>
+    <div class="about">
 
-    <!-- Tabel Data Diri -->
-    <h2>Data Diri</h2>
-    <table border="1" cellpadding="5" cellspacing="0">
-      <thead>
-        <tr>
-          <th>Data</th>
-          <th>Keterangan</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Nama</td>
-          <td>Sakti Wibowo</td>
-        </tr>
-        <tr>
-          <td>NIM</td>
-          <td>2511549</td>
-        </tr>
-        <tr>
-          <td>Program Studi</td>
-          <td>PSTI</td>
-        </tr>
-        <tr>
-          <td>Semester</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td>
-            <a href="mailto:hamzahalhusain78@gmail.com"
-              >hamzahalhusain78@gmail.com</a
-            >
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <!-- Bagian Profil Singkat -->
+      <section class="card">
+        <h2 class="prf">Profil Singkat</h2>
+        <p>
+          Nama saya Sakti Wibowo. Saya adalah mahasiswa PSTI yang memiliki
+          ketertarikan pada web development dan teknologi informasi.
+        </p>
+        <p>Saya mulai belajar membuat website dari HTML dasar.</p>
+        <p>
+          Website target saya adalah dapat membuat website yang bermanfaat dan
+          mudah digunakan.
+        </p>
+      </section>
 
-    <!-- Hobi -->
-    <h2>Hobi</h2>
-    <ol>
-      <li>Atlet serbabisa</li>
-      <li>Membaca buku</li>
-      <li>Fotografi</li>
-    </ol>
+      <!-- Tabel Data Diri -->
+      <section class="card">
+        <h2 class="mee">Data Diri</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nama</td>
+              <td>Sakti Wibowo</td>
+            </tr>
+            <tr>
+              <td>NIM</td>
+              <td>2511549</td>
+            </tr>
+            <tr>
+              <td>Program Studi</td>
+              <td>PSTI</td>
+            </tr>
+            <tr>
+              <td>Semester</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>
+                <a href="mailto:hamizahalhusain78@gmail.com"
+                  >hamizahalhusain78@gmail.com</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <!-- Riwayat Pendidikan -->
-    <h2>Riwayat Pendidikan</h2>
-    <ul>
-      <li>SDN 017 Sagulung Kota Batam - 2016</li>
-      <li>SMP: Ponpes Al-Muslimun Magetan Jawa Timur - 2019</li>
-      <li>SMA: Ponpes Darusy Syahadah Boyolali Jawa Tengah - 2022</li>
-      <li>
-        Diploma: Pesantren Tinggi Al-Islam Bekasi - Al-Qur'an & Hadist - 2024
-      </li>
-      <li>S1: Universitas Pendidikan Indonesia Kampus Purwakarta - Sekarang</li>
-    </ul>
+      <!-- Bagian Hobi -->
+      <section class="card">
+        <h2 class="hobi">Hobi</h2>
+        <ol class="hobby-list">
+          <li>Atlet serbabisa</li>
+          <li>Membaca buku</li>
+          <li>Fotografi</li>
+        </ol>
+      </section>
 
-    <hr />
+      <!-- Riwayat Pendidikan -->
+      <h2>Riwayat Pendidikan</h2>
+      <ul>
+        <li>SDN 017 Sagulung Kota Batam - 2016</li>
+        <li>SMP: Ponpes Al-Muslimun Magetan Jawa Timur - 2019</li>
+        <li>SMA: Ponpes Darusy Syahadah Boyolali Jawa Tengah - 2022</li>
+        <li>
+          Diploma: Pesantren Tinggi Al-Islam Bekasi - Al-Qur'an & Hadist - 2024
+        </li>
+        <li>
+          S1: Universitas Pendidikan Indonesia Kampus Purwakarta - Sekarang
+        </li>
+      </ul>
+    </div>
+
     <a href="index.html">Kembali ke Home</a>
   </body>
 </html>
